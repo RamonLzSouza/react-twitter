@@ -1,5 +1,5 @@
 const Tweet = require('../models/Tweet');
-
+const Ler;
 module.exports = {
     async index(req, res){
         const tweets = await Tweet.find({}).sort('-createdAt')
